@@ -13,17 +13,7 @@
     />
 
     <title>Frontend Mentor | Intro section with dropdown navigation</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
+    <script src="script.js" defer></script>
   </head>
   <body>
     <div class="container">
@@ -31,9 +21,37 @@
         <div class="logo">
           <img src="/images/logo.svg" alt="logo" />
         </div>
-        <button class="icon-menu">
-          <img src="/images/icon-menu.svg" alt="" />
+        <button class="icon-menu toogle-links">
+          <img src="/images/icon-menu.svg" alt="icon-menu" />
         </button>
+
+        <div class="mobile-menu-collapsed">
+          <img
+            src="/images/icon-close-menu.svg"
+            class="icon-close-menu toogle-links"
+            alt="icon-close-menu"
+          />
+          <nav class="navigation">
+            <div class="nav-links">
+              <div class="features">Features</div>
+              <img src="/images/icon-arrow-down.svg" alt="icon-arrow-down" />
+            </div>
+            <div class="nav-links">
+              <div class="company">Company</div>
+              <img src="/images/icon-arrow-down.svg" alt="icon-arrow-down" />
+            </div>
+            <div class="nav-links">
+              <div class="careers">Careers</div>
+            </div>
+            <div class="nav-links">
+              <div class="about">About</div>
+            </div>
+          </nav>
+          <div class="social-links">
+            <button class="login">Login</button>
+            <button class="register">Register</button>
+          </div>
+        </div>
       </nav>
 
       <header class="header-container">
