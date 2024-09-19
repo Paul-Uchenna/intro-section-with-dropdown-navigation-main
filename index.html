@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
-
+    <link rel="stylesheet" href="style.css" />
     <link
       rel="icon"
       type="image/png"
@@ -26,17 +26,42 @@
     </style>
   </head>
   <body>
-    Features Company Careers About Login Register Make remote work Get your team
-    in sync, no matter your location. Streamline processes, create team rituals,
-    and watch productivity soar. Learn more
+    <div class="container">
+      <nav class="navbar">
+        <div class="logo">
+          <img src="/images/logo.svg" alt="logo" />
+        </div>
+        <button class="icon-menu">
+          <img src="/images/icon-menu.svg" alt="" />
+        </button>
+      </nav>
 
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by
-      <a target="_blank" href="https://github.com/paul-uchenna">Paul Uchenna</a
-      >.
+      <header class="header-container">
+        <img src="/images/image-hero-mobile.png" alt="" />
+        <main class="header-main">
+          <h2 class="title-header">Make remote work</h2>
+          <p class="description">
+            Get your team in sync, no matter your location. Streamline process,
+            create team rituals, and watch productivity soar.
+          </p>
+          <button type="submit" class="btn-learn">Learn more</button>
+          <div class="client-icon">
+            <img src="/images/client-databiz.svg" alt="" />
+            <img src="/images/client-audiophile.svg" alt="" />
+            <img src="/images/client-meet.svg" alt="" />
+            <img src="/images/client-maker.svg" alt="" />
+          </div>
+        </main>
+      </header>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a target="_blank" href="https://github.com/paul-uchenna"
+          >Paul Uchenna</a
+        >.
+      </div>
     </div>
   </body>
 </html>
