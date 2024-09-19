@@ -87,7 +87,7 @@ body {
   display: flex;
   align-items: center;
   width: 100%;
-  margin-bottom: 22px;
+  margin-bottom: 25px;
   font-weight: 500;
   color: var(--medium-gray);
   cursor: pointer;
@@ -116,6 +116,26 @@ body {
 .mobile-menu-collapsed .social-links .register {
   border: 2px solid var(--medium-gray);
   margin-top: 12px;
+}
+
+.dropdown-menu {
+  display: none;
+  margin-left: 15px;
+  margin-bottom: 22px;
+}
+
+.show-drop {
+  display: block;
+}
+
+.dropdown-menu .drop {
+  margin-bottom: 15px;
+  color: var(--medium-gray);
+  cursor: pointer;
+}
+
+.dropdown-menu .drop span {
+  margin-left: 13px;
 }
 
 .header-container img {
