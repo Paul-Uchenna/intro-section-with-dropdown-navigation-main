@@ -177,6 +177,8 @@ body {
   font-size: 15px;
   font-weight: 700;
   margin: 0 auto;
+  border: 2px solid var(--almost-black);
+  transition: ease-in-out 0.2s;
 }
 
 .client-icon {
@@ -188,4 +190,9 @@ body {
 
 .client-icon img {
   width: 60px;
+}
+
+.btn-learn:hover {
+  background-color: var(--almost-white);
+  color: var(--almost-black);
 }
