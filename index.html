@@ -18,77 +18,148 @@
   <body>
     <div class="container">
       <nav class="navbar">
-        <div class="logo">
-          <img src="/images/logo.svg" alt="logo" />
+        <!-- Desktop view -->
+        <div class="desktop-view">
+          <div class="nav-left">
+            <div class="nav-logo">
+              <img src="./images/logo.svg" alt="logo" />
+            </div>
+            <ul class="nav-links">
+              <li>
+                Features
+                <img
+                  src="./images/icon-arrow-down.svg"
+                  class="arrow"
+                  alt="arrow down"
+                />
+                <div class="sub-menu one">
+                  <p class="sub-link">
+                    <img src="./images/icon-todo.svg" alt="icon" /> Todo List
+                  </p>
+                  <p class="sub-link">
+                    <img src="./images/icon-calendar.svg" alt="icon" /> Calendar
+                  </p>
+                  <p class="sub-link">
+                    <img src="./images/icon-reminders.svg" alt="icon" />
+                    Reminders
+                  </p>
+                  <p class="sub-link">
+                    <img src="./images/icon-planning.svg" alt="icon" /> Planning
+                  </p>
+                </div>
+              </li>
+              <li>
+                Company
+                <img
+                  src="./images/icon-arrow-down.svg"
+                  class="arrow"
+                  alt="arrow down"
+                />
+                <div class="sub-menu two">
+                  <p class="sub-link">History</p>
+                  <p class="sub-link">Our Team</p>
+                  <p class="sub-link">Blog</p>
+                </div>
+              </li>
+              <li>Careers</li>
+              <li>About</li>
+            </ul>
+          </div>
+          <div class="nav-right">
+            <button class="transparent-btn">Login</button>
+            <button class="outlined-btn">Register</button>
+          </div>
         </div>
-        <button class="icon-menu toogle-links">
-          <img src="/images/icon-menu.svg" alt="icon-menu" />
-        </button>
 
-        <div class="mobile-menu-collapsed">
-          <img
-            src="/images/icon-close-menu.svg"
-            class="icon-close-menu toogle-links"
-            alt="icon-close-menu"
-          />
+        <!-- mobile view -->
+        <div class="mobile-view">
+          <div class="logo">
+            <img src="/images/logo.svg" alt="logo" />
+          </div>
+          <button class="icon-menu toogle-links">
+            <img src="/images/icon-menu.svg" alt="icon-menu" />
+          </button>
 
-          <nav class="navigation">
-            <div class="nav-links toogle-drop">
-              <div class="features">Features</div>
-              <button class="icon-arrow-down">
-                <img src="/images/icon-arrow-down.svg" alt="icon-arrow-down" />
-              </button>
-            </div>
+          <div class="mobile-menu-collapsed">
+            <img
+              src="/images/icon-close-menu.svg"
+              class="icon-close-menu toogle-links"
+              alt="icon-close-menu"
+            />
 
-            <div class="dropdown-menu">
-              <div class="drop">
-                <img src="/images/icon-todo.svg" alt="" />
-                <span>Todo List</span>
+            <nav class="navigation">
+              <div class="nav-links toogle-drop">
+                <div class="features">Features</div>
+                <button class="icon-arrow-down">
+                  <img
+                    src="/images/icon-arrow-down.svg"
+                    alt="icon-arrow-down"
+                  />
+                </button>
               </div>
-              <div class="drop">
-                <img src="/images/icon-calendar.svg" alt="" />
-                <span>Calendar</span>
+
+              <div class="dropdown-menu">
+                <div class="drop">
+                  <img src="/images/icon-todo.svg" alt="" />
+                  <span>Todo List</span>
+                </div>
+                <div class="drop">
+                  <img src="/images/icon-calendar.svg" alt="" />
+                  <span>Calendar</span>
+                </div>
+                <div class="drop">
+                  <img src="/images/icon-reminders.svg" alt="" />
+                  <span>Reminders</span>
+                </div>
+                <div class="drop">
+                  <img src="/images/icon-planning.svg" alt="" />
+                  <span>Planning</span>
+                </div>
               </div>
-              <div class="drop">
-                <img src="/images/icon-reminders.svg" alt="" />
-                <span>Reminders</span>
+
+              <div class="nav-links toogle-drop">
+                <div class="company">Company</div>
+                <button class="icon-arrow-down">
+                  <img
+                    src="/images/icon-arrow-down.svg"
+                    alt="icon-arrow-down"
+                  />
+                </button>
               </div>
-              <div class="drop">
-                <img src="/images/icon-planning.svg" alt="" />
-                <span>Planning</span>
+
+              <div class="dropdown-menu">
+                <div class="drop">History</div>
+                <div class="drop">Our Team</div>
+                <div class="drop">Blog</div>
               </div>
-            </div>
 
-            <div class="nav-links toogle-drop">
-              <div class="company">Company</div>
-              <button class="icon-arrow-down">
-                <img src="/images/icon-arrow-down.svg" alt="icon-arrow-down" />
-              </button>
-            </div>
+              <div class="nav-links">
+                <div class="careers">Careers</div>
+              </div>
 
-            <div class="dropdown-menu">
-              <div class="drop">History</div>
-              <div class="drop">Our Team</div>
-              <div class="drop">Blog</div>
+              <div class="nav-links">
+                <div class="about">About</div>
+              </div>
+            </nav>
+            <div class="social-links">
+              <button class="login">Login</button>
+              <button class="register">Register</button>
             </div>
-
-            <div class="nav-links">
-              <div class="careers">Careers</div>
-            </div>
-
-            <div class="nav-links">
-              <div class="about">About</div>
-            </div>
-          </nav>
-          <div class="social-links">
-            <button class="login">Login</button>
-            <button class="register">Register</button>
           </div>
         </div>
       </nav>
 
       <header class="header-container">
-        <img src="/images/image-hero-mobile.png" alt="" />
+        <img
+          src="/images/image-hero-mobile.png"
+          alt=""
+          class="image-hero-mobile"
+        />
+        <img
+          src="/images/image-hero-desktop.png"
+          alt=""
+          class="image-hero-desktop"
+        />
         <main class="header-main">
           <h2 class="title-header">Make remote work</h2>
           <p class="description">

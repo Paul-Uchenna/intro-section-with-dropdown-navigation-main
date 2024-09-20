@@ -1,6 +1,17 @@
 const toggleButtons = document.querySelectorAll(".toogle-links");
 const mobileMenu = document.querySelector(".mobile-menu-collapsed");
+const navLinks = document.querySelectorAll(".nav-links li");
 
+// Desktop toggle
+navLinks.forEach((link) => {
+  const subMenu = link.querySelector(".sub-menu");
+  link.addEventListener("click", () => {
+    link.classList.toggle("active");
+    subMenu.classList.toggle("active-menu");
+  });
+});
+
+// Mobile toggle
 toggleButtons.forEach((button) => {
   button.addEventListener("click", () => {
     mobileMenu.classList.toggle("show-menu");
