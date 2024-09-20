@@ -27,6 +27,10 @@ a {
   text-decoration: none;
 }
 
+br {
+  display: none;
+}
+
 button {
   background: none;
   border: none;
@@ -190,7 +194,7 @@ body {
   background-color: var(--almost-black);
   color: var(--almost-white);
   padding: 1rem 2rem;
-  border-radius: 15px;
+  border-radius: 10px;
   font-size: 15px;
   font-weight: 700;
   margin: 0 auto;
@@ -215,6 +219,9 @@ body {
 }
 
 @media (min-width: 1040px) {
+  br {
+    display: block;
+  }
   .container {
     width: 1440px;
     overflow: hidden;
@@ -334,9 +341,42 @@ body {
     display: none;
   }
 
+  .header-container {
+    max-width: 1040px;
+    margin: auto;
+  }
+
   .header-container .image-hero-desktop {
     display: block;
+    width: 50vw;
     order: 2;
-    /* height: 70vh; */
+    height: 40vw;
+    margin-left: 8rem;
+  }
+
+  .header-main {
+    padding-top: 5rem;
+  }
+
+  .title-header {
+    font-size: 75px;
+    font-weight: 700;
+    text-align: start;
+  }
+
+  .description {
+    line-height: 25px;
+    margin-bottom: 20px;
+    text-align: start;
+    padding-left: 14px;
+  }
+
+  .btn-learn {
+    margin-left: 14px;
+    margin-bottom: 20px;
+  }
+
+  .client-icon {
+    margin-left: 14px;
   }
 }
