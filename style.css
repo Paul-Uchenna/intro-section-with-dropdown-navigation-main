@@ -111,9 +111,9 @@ body {
 }
 
 .mobile-menu-collapsed .navigation .nav-links img {
-  width: 10px;
-  height: 8px;
-  margin-left: 18px;
+  /* width: 10px;
+  height: 8px; */
+  margin-left: 13px;
 }
 
 .mobile-menu-collapsed .social-links {
